@@ -55,14 +55,14 @@ lockImg_label=Label(app,image=lockImg,bg=background)
 lockImg_label.grid(row=2,column=3)
 #Button
 #Login Button
-login_btn=Button(app,text="Login",command=login,fg="white",bg="blue",cursor="hand2")
+login_btn=Button(app,text="Login",command=login,fg="white",bg="blue",activeforeground="white",activebackground="blue",cursor="hand2")
 login_btn.grid(row=3,column=5,sticky=E,pady=10)
 #clear Button
-clear_btn=Button(app,text="Clear",command=clear,fg="white",bg="blue",cursor="hand2")
+clear_btn=Button(app,text="Clear",command=clear,fg="white",bg="blue",activeforeground="white",activebackground="blue",cursor="hand2")
 clear_btn.grid(row=3,column=5,sticky=W,pady=10)
 #Eye Button
 openeye_img=PhotoImage(file="view.png")
-eye_btn=Button(app,image=openeye_img,command=hide,bg=background,bd=0,cursor="hand2")
+eye_btn=Button(app,image=openeye_img,command=hide,bg=background,activebackground=background,bd=0,cursor="hand2")
 eye_btn.grid(row=2,column=6)
 #Run the application
 app.mainloop()
